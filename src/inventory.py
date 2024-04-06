@@ -45,4 +45,8 @@ class InventoryManagement():
         """
         return cls.products
 
+    @classmethod
+    def get_product(cls, product_id:str) -> Optional[Product]:
+        return cls.products.get(product_id)
+
 
